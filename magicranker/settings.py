@@ -1,6 +1,6 @@
 import os.path
 
-import _private as private
+import magicranker._private as private
 
 is_dev = os.uname()[1] in private.DEV_SERVERS
 
@@ -167,10 +167,10 @@ GA_TRACKING_ID = private.GA_TRACKING_ID
 
 BOWER_INSTALLED_APPS = (
     'jquery#1.10',
-    'bootstrap',
+    'bootstrap#3.2.0',
     'less',
-    'angular#>=1.4.0',
-    'angular-bootstrap',
+    'angular#<2',
+    'angular-bootstrap#0.11.0',
 )
 
 COMPRESS_PRECOMPILERS = (
